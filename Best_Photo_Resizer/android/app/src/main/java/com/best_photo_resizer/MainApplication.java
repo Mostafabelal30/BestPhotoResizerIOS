@@ -3,6 +3,13 @@ package com.best_photo_resizer;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.reactnative.ivpusic.imagepicker.PickerPackage;
+import cl.json.RNSharePackage;
+import fr.bamlab.rnimageresizer.ImageResizerPackage;
+import com.reactnative.ivpusic.imagepicker.PickerPackage;
+import com.RNFetchBlob.RNFetchBlobPackage;
+import com.sbugert.rnadmob.RNAdMobPackage;
+import com.reactnative.ivpusic.imagepicker.PickerPackage;
 import cl.json.RNSharePackage;
 import fr.bamlab.rnimageresizer.ImageResizerPackage;
 import com.reactnative.ivpusic.imagepicker.PickerPackage;
@@ -37,6 +44,13 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new PickerPackage(),
+            new RNSharePackage(),
+            new ImageResizerPackage(),
+            new PickerPackage(),
+            new RNFetchBlobPackage(),
+            new RNAdMobPackage(),
+            new PickerPackage(),
             new RNSharePackage(),
             new ImageResizerPackage(),
             new PickerPackage(),
